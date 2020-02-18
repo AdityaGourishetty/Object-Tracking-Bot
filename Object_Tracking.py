@@ -52,7 +52,7 @@ while(1):
             cy = int(M['m01']/M['m00'])
             cv.circle(frame, (cx, cy), 4, (0,255,0), -1)
 
-            # object Motion
+            # Object Motion
             if cx in range(150,250):
                 if cy < 150:
                     Arduino.write(b'f')
